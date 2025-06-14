@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+       body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+      background: #f5f5f5;
+
+
+
+
+     .footer-logo {
+  width: 30px;
+  vertical-align: middle;
+}
+ footer {
+
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+
+
+
+
+
+}
+
+header {
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+
+} 
+header {
+  text-align: center;
+  padding: 1em;
+}
+
+
+
+
+
+* {
+      box-sizing: border-box;
+    }
+
+    <!--
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+
+    -->
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 2rem;
+      padding: 40px;
+
+
+
+
+
+
+
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      border-radius: 4px;
+    }
+
+
+
+<!--
+.card {
+      background: transparent;
+      border: 5px solid #fff;
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+
+
+      overflow: hidden;
+  box-sizing: border-box;
+
+    }
+    -->
+
+
+
+
+<!--
+
+.card img {
+      width: 100%;
+      height: 100px;
+      background: #999;
+      display: block;
+      margin: 15px 0;
+    }
+    -->
+
+
+
+.card img {
+      width: 100%;
+      height: 120px;
+      background: #999;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #888;
+      font-weight: normal;
+      font-size: 1em;
+    }
+    
+    
+    
+   
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .card ul li {
+      margin: 10px 0;
+      position: relative;
+      padding-left: 25px;
+    }
+    .card ul li::before {
+      content: "✔";
+      color: red;
+      position: absolute;
+      left: 0;
+    }
+
+
+    .testimonial {
+
+
+display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  max-width: 100%; /* Prevents overflow from flex children */
+
+
+
+
+
+
+
+    }
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      background: #999;
+
+  
+
+    }
+
+
+    .quote {
+      font-style: italic;
+      font-size: 0.95em;
+    }
+    .author {
+      font-size: 0.85em;
+      color: #666;
+    }
+
+    /* Optional: Responsive behavior */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+
+
+
+
+* {
+      box-sizing: border-box;
+   
+   
+    }
+
+    -->
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #2e353b;
+      color: #f1f1f1;
+    }
+    -->
+    .four-column-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+
+<!--
+    
+    .card {
+      background: transparent;
+      border: 5px solid #fff;
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+
+
+      overflow: hidden;
+  box-sizing: border-box;
+
+    }
+    -->
+
+
+
+
+
+
+
+
+
+
+    <!--
+    .card img {
+      width: 100%;
+      height: 120px;
+      background: #999;
+      display: block;
+      margin-bottom: 20px;
+    }
+    -->
+
+
+
+
+
+
+
+    .card h3 {
+      color: #fff;
+      margin-top: 0;
+      
+
+
+    }
+    .card p {
+      color: #ccc;
+      line-height: 1.6em;
+    }
+    .card a {
+      color: #ffcc66;
+      text-decoration: none;
+    }
+
+    @media (max-width: 1024px) {
+      .four-column-section {
+        flex-wrap: wrap;
+      }
+      .card {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+
+
+    
+  
+
+
+
+</style>
+</head>
+
+    <body>
+        
+
+<header>
+    <img src="littlelemonasset1.png" alt="Little Lemon Logo" class="logo">
+    <h1>LITTLE LEMON RESTAURANT</h1>
+  </header>
+
+
+    
+
+<nav>
+    <ul>
+      <li><a href="little-lemon-restaurant.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="book.html">Book a Table</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+      <li><a href="#footer">Go to bottom</a></li>
+    </ul>
+  </nav>
+
+
+<main>
+<section>
+
+
+
+<div class="container">
+  <!-- Who We Are -->
+  <div class="card">
+    <h2>Who We Are</h2>
+    <h3>About Our Restaurant</h3>
+
+  <video controls width="320" height="240">
+
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+    <!--
+ 
+    <img alt="placeholder"  >
+  -->
+
+    <p>
+      Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+
+    </p>
+
+ <audio loop controls>
+      <source src="music.ogg" type="audio/ogg">
+      
+    </audio>
+
+  </div>
+
+  <!-- What We Do -->
+  <div class="card">
+    <h2 >What We Do</h2>
+    <h3>About what we do</h3>
+    <ul>
+      <li> We serve fresh, Mediterranean-inspired meals made with locally sourced ingredients.</li>
+      <li>   From zesty lemon-infused dishes to hearty pastas, our menu offers something for everyone. </li>
+      <li> Our chefs blend tradition with creativity to bring you unforgettable flavors. </li>
+      <li>  Whether you're dining in or ordering out, we promise warm service and quality food.   </li>
+      <li> At Little Lemon, every bite tells a story of comfort, care, and sunshine.  </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+    </div>
+
+
+<!--
+ Client Ratings -->
+
+ <!--
+<div class="card">
+  <div>
+    <h2>Client Ratings</h2>
+    <h3>What our customers think of our meals</h3>
+
+    <div class="testimonial">
+      <img alt="dish" style="background:#999;">
+      <div>
+        <p class="quote">"Grilled Salmon was amazing!"</p>
+        <p class="author">★★★★★ — Alice T.</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img alt="dish" style="background:#999;">
+      <div>
+        <p class="quote">"Best veggie burger in town!"</p>
+        <p class="author">★★★★☆ — Daniel R.</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img alt="dish" style="background:#999;">
+      <div>
+        <p class="quote">"The pasta was cooked perfectly."</p>
+        <p class="author">★★★★★ — Mia L.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!--
+
+
+
+
+
+
+
+
+
+
+
+<!-- Client Ratings -->
+<div class="card">
+  <div>
+    <h2>Client Ratings</h2>
+    <h3>What our customers think of our meals</h3>
+
+    <div class="testimonial">
+      <img src="pexels-shameel-mukkath-3421394-5639482.jpg" alt="Grilled Salmon" 
+           style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+      <div>
+        <p class="quote">Grilled Salmon was amazing!</p>
+        <p class="author">★★★★★ — Alice T.</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="front-view-vegetarian-burger-counter-with-tomatoes.jpg" alt="Veggie Burger" 
+           style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+      <div>
+        <p class="quote">Best veggie burger in town!</p>
+        <p class="author">★★★★☆ — Daniel R.</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <img src="penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table (1).jpg" alt="Pasta" 
+           style="width: 60px; height: 60px; object-fit: cover; border-radius: 8px;">
+      <div>
+        <p class="quote">The pasta was cooked perfectly.</p>
+        <p class="author">★★★★★ — Mia L.</p>
+      </div>
+    </div>
+
+    <!-- ✅ Rating form added below the testimonials -->
+    <form style="margin-top: 20px;">
+      <div>
+        <label for="rating">Rating</label><br>
+        <input type="range" min="1" max="5" id="rating" name="rating" list="ratings">
+        <datalist id="ratings">
+          <option value="1" label="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5" label="5"></option>
+        </datalist>
+      </div>
+      <button type="submit">Submit Rating</button>
+    </form>
+
+  </div>
+</div>
+
+
+
+
+
+<footer id="footer">
+    <img src="littlelemonasset1.png" alt="Little Lemon Logo" class="footer-logo">
+    <p>&copy; 2025 Little Lemon. All rights reserved.</p>
+    <a href="#">⬆ Back to Top</a>
+  </footer>
+
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+</main>
+
+
+
+    </body>
+</html>
