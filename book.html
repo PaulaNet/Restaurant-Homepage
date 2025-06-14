@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Table - Little Lemon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+    }
+
+logo {
+  width: 60px;
+}
+
+.footer-logo {
+  width: 30px;
+  vertical-align: middle;
+}
+
+
+
+
+
+    header {
+      text-align: center;
+      padding: 1.5em;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #333;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 1em;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    .booking-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .booking-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .booking-form input,
+    .booking-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .booking-form button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .booking-form button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #333;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="littlelemonasset1.png" alt="Little Lemon Logo" style="width:60px;">
+    <h1>Book a Table</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="little-lemon-restaurant.html">Home</a></li>
+       <li><a href="menu.html">Menu</a></li>
+      <li><a href="book.html">Book a Table</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html" class="active">Donate</a></li>
+       <li><a href="#footer">Go to bottom</a></li>
+    </ul>
+  </nav>
+
+  <div class="booking-container">
+    <h2>Reserve Your Table</h2>
+    <form class="booking-form" action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="guests">Number of Guests</label>
+      <select id="guests" name="guests" required>
+        <option value="">Select</option>
+        <option value="1">1 Person</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5">5 People</option>
+        <option value="6">6+ People</option>
+      </select>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+
+  <footer id="footer">
+     <img src="littlelemonasset1.png" alt="Little Lemon Logo" class="footer-logo">
+    <p>&copy; 2025 Little Lemon Restaurant. All rights reserved.</p>
+     <a href="#">⬆ Back to Top</a>
+  </footer>
+
+</body>
+</html>
